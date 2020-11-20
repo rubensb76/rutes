@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fir-01-700a4"
+  },
+  "targets": {
+    "fir-01-700a4": {
+      "hosting": {
+        "rutes": [
+          "fir-01-700a4"
+        ]
+      }
+    }
+  }
+}

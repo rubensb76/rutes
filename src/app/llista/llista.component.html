@@ -1,0 +1,16 @@
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Inserir nou item</h5>
+    <input type="text" [(ngModel)]="nomItem">
+    <button type="button" class="btn btn-primary" (click)="inserirItem()">Guardar</button>
+  </div>
+</div>
+
+<div class="card text-center" style="width: 18rem;" *ngFor="let n of noms">
+  <div class="card-body">
+    <h5 class="card-title">{{n.payload.doc.data().nom}}</h5>
+    <button type="button" class="btn btn-danger" (click)="borrarItem(n.payload.doc.id)">Eliminar</button>
+    <button type="button" class="btn btn-success" (click)="detall(n.payload.doc.data().nom)">Detall</button>
+    <button type="button" class="btn btn-success" (click)="detall2(n.payload.doc.id)">Detall2</button>
+  </div>
+</div>

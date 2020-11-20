@@ -1,0 +1,8 @@
+<div class="card text-center" style="width: 18rem;">
+  <div class="card-body">
+    <h4 class="card-title">{{nomItemSeleccionat}}</h4>
+    <input type="text" class="form-control" placeholder="Modifica el nom de l'ítem" [(ngModel)]="nomItemModificat">
+    <button type="button" class="btn btn-success" (click)="modificarItem()">Update</button>
+    <button type="button" class="btn btn-danger" routerLink="/items">Tornar</button>
+  </div>
+</div>
